@@ -32,3 +32,15 @@ class CandidateItem(Item):
     age = Field(input_processor=MapCompose(in_process_age), output_processor=TakeFirst())
     gender = Field(input_processor=MapCompose(in_process_gender), output_processor=TakeFirst())
 
+    
+class FullCandidateItem(Item):
+    candidate_name = Field(input_processor=MapCompose(in_process_candidate_name), output_processor=TakeFirst())
+    party = Field(input_processor=MapCompose(str.strip), output_processor=TakeFirst())
+    state = Field(input_processor=MapCompose(str.strip), output_processor=TakeFirst())
+    constituency = Field(input_processor=MapCompose(str.strip), output_processor=TakeFirst())
+    status = Field(input_processor=MapCompose(str.strip), output_processor=TakeFirst())
+    age = Field(input_processor=MapCompose(in_process_age), output_processor=TakeFirst())
+    gender = Field(input_processor=MapCompose(in_process_gender), output_processor=TakeFirst())
+    file_url = Field()
+    file_result = Field()
+
