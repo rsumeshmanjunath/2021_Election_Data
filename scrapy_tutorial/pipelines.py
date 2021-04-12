@@ -5,8 +5,7 @@
 
 
 # useful for handling different item types with a single interface
-import mimetypes
-import os
+
 from scrapy.pipelines.files import FilesPipeline
 from scrapy import Request
 
