@@ -1,7 +1,14 @@
 # 2021_Election_Data
 
-1. candidate_item.py - This is the main python code to scrap the data from https://affidavit.eci.gov.in/. 
-2. The scrapped data includes - (candidate_name, party, state, constituency, status, age, gender)
+1. candidate_item.py - This is the main python code to scrap the data from https://affidavit.eci.gov.in/. without any file download.
+
+2. full_candidate.py - This is also the main python code to scrap the data from https://affidavit.eci.gov.in/, here file download code is integrated. So the affidavit of the candidate will be downloaded as per the settings in settings.py. 
+
+The main issue in this file is that the name of the file is SHA1 of the URL. I want to rename the file while downloading.
+
+More information about the downloading code.
+1. doc_spider.py code specifically download the file, it does not scrap contain any other data.
+
 
 Now, as in the browser, once you click on a candidate it takes you to their profile page and I wanted to download affidavit file from that page. 
 
