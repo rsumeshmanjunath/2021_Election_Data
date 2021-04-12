@@ -7,15 +7,15 @@ Now, as in the browser, once you click on a candidate it takes you to their prof
 
 After inspecting this candidate page (https://affidavit.eci.gov.in/show-profile/MTY5MDY=/MTY=/MTA=/Mw==/QUM=), I figured out that once you click on download button, a GET request is sent to download the file. The name of the file is in the hidden field as shown here.
 
-<div class="aside-af">
-       <h4 class="pull-left">Affidavit</h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		           <input type="hidden" value="aHR0cHM6Ly9zdXZpZGhhLmVjaS5nb3YuaW4vdXBsb2FkczEvYWNhZmZpZGF2aXQvRTEwLzIwMjEvQUMvUzI1LzE2MC9TMjVfMTY5MDZfMTEzMzlfMjAyMTA0MDcwODEyMTYxNjE3ODA2NTM2LnBkZg==" id="pdfUrl" name="pdfUrl">
-          <a href="javascript:void(0);" id="vvvvvvv"><button type="button" onclick="return increaseDownloadCount();" class="btn orng pull-right">Download <i class="fa fa-download"></i></button></a>                     <div class="clearfix"></div>
-            <div class="info">
-                  <p><span><strong>Download Count</strong></span> <span id="updateCount">71</span></p> 
-                  <p><span><strong>Affidavit Uploaded : </strong></span> <span>7th April, 2021   </span></p>                   
-                </div>
-            </div>
+	<div class="aside-af">
+	       <h4 class="pull-left">Affidavit</h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				   <input type="hidden" value="aHR0cHM6Ly9zdXZpZGhhLmVjaS5nb3YuaW4vdXBsb2FkczEvYWNhZmZpZGF2aXQvRTEwLzIwMjEvQUMvUzI1LzE2MC9TMjVfMTY5MDZfMTEzMzlfMjAyMTA0MDcwODEyMTYxNjE3ODA2NTM2LnBkZg==" id="pdfUrl" name="pdfUrl">
+		  <a href="javascript:void(0);" id="vvvvvvv"><button type="button" onclick="return increaseDownloadCount();" class="btn orng pull-right">Download <i class="fa fa-download"></i></button></a>                     <div class="clearfix"></div>
+		    <div class="info">
+			  <p><span><strong>Download Count</strong></span> <span id="updateCount">71</span></p> 
+			  <p><span><strong>Affidavit Uploaded : </strong></span> <span>7th April, 2021   </span></p>                   
+			</div>
+		    </div>
 
 
 The URL in GET request as per the Javascript file is 
