@@ -4,9 +4,7 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 from scrapy.item import Item, Field
-from itemloaders.processors import Join, MapCompose, TakeFirst, Identity, Compose
-from datetime import datetime
-
+from itemloaders.processors import Join, MapCompose, TakeFirst
 
 def in_process_candidate_name(name):
     return name.upper()
